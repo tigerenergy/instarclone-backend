@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/tigerenergy/instarclone-backend/issues"
   },
-  "homepage": "https://github.com/tigerenergy/instarclone-backend#readme"
+  "homepage": "https://github.com/tigerenergy/instarclone-backend#readme",
+  "dependencies": {
+    "apollo-server": "^2.25.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
