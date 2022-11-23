@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nodemon --exec babel-node server"
+    "dev": "nodemon --exec babel-node server",
+    "mig": "npx prisma migrate dev"
   },
   "repository": {
     "type": "git",
@@ -17,13 +18,15 @@
   },
   "homepage": "https://github.com/tigerenergy/instarclone-backend#readme",
   "dependencies": {
+    "@prisma/client": "^4.6.1",
     "apollo-server": "^2.25.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/node": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "prisma": "^4.6.1"
   },
   "type": "module"
 }
