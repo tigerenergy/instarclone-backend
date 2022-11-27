@@ -9,7 +9,7 @@ export default {
       if (!user) {
         return {
           ok: false,
-          error: 'User not found!',
+          error: 'User not found!~',
         };
       }
       const passwordOk = await bcrypt.compare(password, user.password);
