@@ -15,4 +15,6 @@ const server = new ApolloServer({
 
 server
   .listen(PORT)
-  .then(() => console.log(`🐯 포기하지 말자 🐯 [http://localhost:${PORT}/]`));
+  .then(() =>
+    console.log(`🐯 절대 포기하지 말자 🐯 [http://localhost:${PORT}/]`)
+  );
