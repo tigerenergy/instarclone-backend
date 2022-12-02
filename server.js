@@ -21,5 +21,5 @@ app.use(logger('tiny'))
 apollo.applyMiddleware({ app })
 app.use('/static', express.static('uploads'))
 app.listen({ port: PORT }, () => {
-  console.log(`🐯포기하지 말자 http://localhost/:${PORT}/grapql`)
+  console.log(`🐯포기하지 말자 http://localhost:${PORT}/graphql`)
 })
