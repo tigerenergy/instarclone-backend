@@ -6,7 +6,7 @@ import { typeDefs, resolvers } from './schema'
 import { getUser } from './users/users.utils'
 
 const PORT = process.env.PORT
-const server = new ApolloServer({
+const apollo = new ApolloServer({
   resolvers,
   typeDefs,
   context: async ({ req }) => {
@@ -18,7 +18,8 @@ const server = new ApolloServer({
 
 const app = express()
 app.use(logger('tiny'))
-server.applyMiddleware({ app })
+apollo.applyMiddleware({ app })
+app.use('/static', express.static('uploads'))
 app.listen({ port: PORT }, () => {
-  console.log(`🚀포기하지말장 http://localhost:${PORT}/graphql 🐯`)
+  console.log(`🐯포기하지 말자 http://localhost/:${PORT}/grapql`)
 })
