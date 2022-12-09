@@ -17,8 +17,8 @@ Instaclone Backend.
 
 ## Photos
 
+- [x] Upload Photo
 - [ ] See Photo
-- [ ] Upload Photo
 - [ ] Edit Photo
 - [ ] Like / Unlike Photo
 - [ ] See Photo Likes
