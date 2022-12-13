@@ -1,6 +1,5 @@
 import client from '../../client'
 import { protectedResolver } from '../../users/users.utils'
-
 export default {
   Mutation: {
     sendMessage: protectedResolver(
@@ -29,7 +28,7 @@ export default {
                     id: userId,
                   },
                   {
-                    id: loggedInUser,
+                    id: loggedInUser.id,
                   },
                 ],
               },
